@@ -1,0 +1,14 @@
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\bin\Debug\net9.0\InformationSystemDomain.deps.json
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\bin\Debug\net9.0\InformationSystemDomain.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\bin\Debug\net9.0\InformationSystemDomain.pdb
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.AssemblyInfoInputs.cache
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.AssemblyInfo.cs
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.csproj.CoreCompileInputs.cache
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\refint\InformationSystemDomain.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.pdb
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\ref\InformationSystemDomain.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\bin\Debug\net9.0\InformationSystemDomain.runtimeconfig.json
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.csproj.AssemblyReference.cache
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemDomain\obj\Debug\net9.0\InformationSystemDomain.genruntimeconfig.cache
