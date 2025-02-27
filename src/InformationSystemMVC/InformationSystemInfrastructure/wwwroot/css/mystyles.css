@@ -1,3 +1,45 @@
-﻿.test {
-    background-color: blue;
+﻿.header-menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    background: #2a3445;
+    align-items: center
+}
+
+.button1 {
+    display: inline-block;
+    background: #2a3445;
+    color: white;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    padding:20px;
+}
+
+.button1:hover {
+    background: #4978c9;
+}
+
+.ut-divider1 {
+    background: darkgrey;
+    width: 2px;
+    border-radius: 1px;
+    height: 50px;
+}
+
+.button2 {
+    display: inline-block;
+    background: #2a3445;
+    color: white;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+}
+
+.button2:hover {
+    background: #4978c9;
 }

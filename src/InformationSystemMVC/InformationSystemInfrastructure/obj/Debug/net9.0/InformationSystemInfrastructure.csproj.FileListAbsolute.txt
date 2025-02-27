@@ -323,7 +323,6 @@ D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\b
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\h89z0psl5m-2y9kg0sd2w.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\plbb3xogho-lugek5hnai.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\rm5skpffcf-fr7q2aak1r.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\a995vxg5cb-l3n5xuwxn8.gz
@@ -331,3 +330,4 @@ D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\o
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\j171xkqi1l-qlccset4i1.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\2ao8q185w0-xzw0cte36n.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\d0gqpc262n-jfsiqqwiad.gz
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\h89z0psl5m-xtbedye87i.gz
