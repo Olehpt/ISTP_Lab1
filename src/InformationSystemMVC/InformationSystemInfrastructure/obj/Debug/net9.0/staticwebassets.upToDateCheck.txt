@@ -30,6 +30,7 @@ D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\w
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\css\mystyles.css
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
@@ -60,6 +61,7 @@ D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\w
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\css\mystyles.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace InformationSystemDomain.Model;
 
-public partial class User:Entity
+public partial class User
 {
+    public int UserId { get; set; }
     public string Name { get; set; } = null!;
 
     public string Email { get; set; } = null!;

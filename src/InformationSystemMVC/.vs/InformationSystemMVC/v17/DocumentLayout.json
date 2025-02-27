@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\views\\subjects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\views\\subjects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\authorsperarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\authorsperarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\views\\subjects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\views\\subjects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\publicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\publicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\projectcscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\projectcscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,118 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Article.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Article.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\Article.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Article.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\Article.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:18:08.134Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Edit.cshtml",
+              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Views\\Subjects\\Edit.cshtml",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Edit.cshtml",
+              "RelativeToolTip": "InformationSystemInfrastructure\\Views\\Subjects\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T12:42:18.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthorsPerArticle.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\AuthorsPerArticle.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\AuthorsPerArticle.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\AuthorsPerArticle.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\AuthorsPerArticle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:17:57.9Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Details.cshtml",
+              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Views\\Subjects\\Details.cshtml",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Details.cshtml",
+              "RelativeToolTip": "InformationSystemInfrastructure\\Views\\Subjects\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T12:41:25.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Comment.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\Comment.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Comment.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:17:47.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Organization.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Organization.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\Organization.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Organization.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\Organization.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:17:24.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PublicationType.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\PublicationType.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\PublicationType.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\PublicationType.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\PublicationType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:17:11.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Subject.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\Subject.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Subject.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\Subject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:17:00.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\User.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\User.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\User.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:16:19.896Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Create.cshtml",
+              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Views\\Subjects\\Create.cshtml",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Create.cshtml",
+              "RelativeToolTip": "InformationSystemInfrastructure\\Views\\Subjects\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T12:41:09.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Entity.cs",
-              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\Entity.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Entity.cs",
-              "RelativeToolTip": "InformationSystemDomain\\Model\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T11:52:32.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProjectCsContext.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\ProjectCsContext.cs",
-              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\ProjectCsContext.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\ProjectCsContext.cs",
-              "RelativeToolTip": "InformationSystemInfrastructure\\ProjectCsContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T11:49:31.646Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Index.cshtml",
+              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Views\\Subjects\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Subjects\\Index.cshtml",
+              "RelativeToolTip": "InformationSystemInfrastructure\\Views\\Subjects\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T12:40:48.519Z",
               "EditorCaption": ""
             }
           ]

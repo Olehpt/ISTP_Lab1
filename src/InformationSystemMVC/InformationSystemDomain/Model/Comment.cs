@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace InformationSystemDomain.Model;
 
-public partial class Comment:Entity
+public partial class Comment
 {
+    public int ComId { get; set; }
     public string Content { get; set; } = null!;
 
     public DateOnly PublicationDate { get; set; }

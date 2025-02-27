@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\InformationSystemInfrastructure.laq784fuiq.bundle.scp.css"
     },
     {
+      "Id": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\wwwroot\\css\\mystyles.css",
+      "PackagePath": "staticwebassets\\css\\mystyles.css"
+    },
+    {
       "Id": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

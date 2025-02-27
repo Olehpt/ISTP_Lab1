@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace InformationSystemDomain.Model;
 
-public partial class PublicationType:Entity
+public partial class PublicationType
 {
+    public int TypeId { get; set; }
     public string? Description { get; set; }
 
     public string? Requirements { get; set; }

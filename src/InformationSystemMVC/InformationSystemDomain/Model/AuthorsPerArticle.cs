@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace InformationSystemDomain.Model;
 
-public partial class AuthorsPerArticle:Entity
+public partial class AuthorsPerArticle
 {
+    public int LinkId { get; set; }
     public int Authors { get; set; }
 
     public int Article { get; set; }

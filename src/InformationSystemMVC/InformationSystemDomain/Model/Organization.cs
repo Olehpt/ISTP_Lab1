@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace InformationSystemDomain.Model;
 
-public partial class Organization:Entity
+public partial class Organization
 {
+    public int OrgId { get; set; }
     public string Name { get; set; } = null!;
 
     public string? Description { get; set; }
