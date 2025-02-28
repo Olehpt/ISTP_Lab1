@@ -13,12 +13,12 @@
     color: white;
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
-    padding:20px;
+    padding: 20px;
 }
 
-.button1:hover {
-    background: #4978c9;
-}
+    .button1:hover {
+        background: #4978c9;
+    }
 
 .ut-divider1 {
     background: darkgrey;
@@ -28,6 +28,10 @@
 }
 
 .button2 {
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: inline-block;
     background: #2a3445;
     color: white;
@@ -40,6 +44,31 @@
     border-radius: 20px;
 }
 
-.button2:hover {
-    background: #4978c9;
+    .button2:hover {
+        outline: none;
+        border: none;
+        background: #4978c9;
+    }
+
+.button-delete1 {
+    outline:none;
+    border:none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background: #f54e25;
+    color: white;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
 }
+
+    .button-delete1:hover {
+        outline: none;
+        border: none;
+        background: #eb7659;
+    }

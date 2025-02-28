@@ -330,4 +330,4 @@ D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\o
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\j171xkqi1l-qlccset4i1.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\2ao8q185w0-xzw0cte36n.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\d0gqpc262n-jfsiqqwiad.gz
-D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\h89z0psl5m-xtbedye87i.gz
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\h89z0psl5m-o77b2l8lah.gz
