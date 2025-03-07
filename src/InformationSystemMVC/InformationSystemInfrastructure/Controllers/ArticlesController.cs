@@ -61,15 +61,12 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ArticleId,Name,Topic,Content,PublicationDate,Media,SubjectId,TypeId")] Article article)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(article);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+            Console.WriteLine("modelstate is valid");
+            _context.Add(article);
             ViewData["SubjectId"] = new SelectList(_context.Subjects, "SubjectId", "Name", article.SubjectId);
             ViewData["TypeId"] = new SelectList(_context.PublicationTypes, "TypeId", "Name", article.TypeId);
-            return View(article);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Articles/Edit/5
