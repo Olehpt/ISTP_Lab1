@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace InformationSystemDomain.Model;
 
@@ -7,9 +8,9 @@ public partial class User
 {
     public int UserId { get; set; }
     public string Name { get; set; } = null!;
-
     public string Email { get; set; } = null!;
-
+    [Required]
+    [MinLength(4, ErrorMessage = "Password must be at least 4 characters long")]
     public string Password { get; set; } = null!;
 
     public string? Info { get; set; }

@@ -23,6 +23,10 @@ namespace InformationSystemInfrastructure.Controllers
         public async Task<IActionResult> Index()
         {
             var projectCsContext = _context.Articles.Include(a => a.Subject).Include(a => a.Type);
+            foreach(var article in projectCsContext)
+            {
+                Console.WriteLine(article.Name);
+            }
             return View(await projectCsContext.ToListAsync());
         }
 
@@ -61,7 +65,6 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ArticleId,Name,Topic,Content,PublicationDate,Media,SubjectId,TypeId")] Article article)
         {
-            Console.WriteLine("modelstate is valid");
             _context.Add(article);
             ViewData["SubjectId"] = new SelectList(_context.Subjects, "SubjectId", "Name", article.SubjectId);
             ViewData["TypeId"] = new SelectList(_context.PublicationTypes, "TypeId", "Name", article.TypeId);
