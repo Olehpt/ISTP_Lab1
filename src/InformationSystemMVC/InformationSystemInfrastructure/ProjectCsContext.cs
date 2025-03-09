@@ -64,7 +64,7 @@ public partial class ProjectCsContext : DbContext
             entity.ToTable("AuthorsPerArticle");
 
             entity.Property(e => e.LinkId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("LinkID");
 
             entity.HasOne(d => d.ArticleNavigation).WithMany(p => p.AuthorsPerArticles)

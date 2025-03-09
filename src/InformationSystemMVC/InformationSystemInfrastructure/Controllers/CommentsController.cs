@@ -49,7 +49,7 @@ namespace InformationSystemInfrastructure.Controllers
         // GET: Comments/Create
         public IActionResult Create()
         {
-            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Content");
+            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Name");
             ViewData["AuthorId"] = new SelectList(_context.Users, "UserId", "Email");
             return View();
         }
@@ -61,7 +61,7 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ComId,Content,PublicationDate,ArticleId,AuthorId")] Comment comment)
         {
-            ViewData["ArticleId"] = new SelectList(articles, "ArticleId", "Name", comment.ArticleId);
+            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Name", comment.ArticleId);
             ViewData["AuthorId"] = new SelectList(_context.Users, "UserId", "Email", comment.AuthorId);
             _context.Add(comment);
             await _context.SaveChangesAsync();
@@ -81,7 +81,7 @@ namespace InformationSystemInfrastructure.Controllers
             {
                 return NotFound();
             }
-            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Content", comment.ArticleId);
+            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Name", comment.ArticleId);
             ViewData["AuthorId"] = new SelectList(_context.Users, "UserId", "Email", comment.AuthorId);
             return View(comment);
         }
@@ -118,7 +118,7 @@ namespace InformationSystemInfrastructure.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Content", comment.ArticleId);
+            ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Name", comment.ArticleId);
             ViewData["AuthorId"] = new SelectList(_context.Users, "UserId", "Email", comment.AuthorId);
             return View(comment);
         }
