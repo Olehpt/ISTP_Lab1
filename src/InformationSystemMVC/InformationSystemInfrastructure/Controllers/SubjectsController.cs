@@ -56,6 +56,14 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("SubjectId,Description,Name")] Subject subject)
         {
+            var existingPublication = await _context.Subjects
+                 .Where(u => EF.Functions.Like(u.Name, subject.Name))
+                 .FirstOrDefaultAsync();
+
+            if (existingPublication != null)
+            {
+                ModelState.AddModelError("Name", "Subject with the same name already exists.");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(subject);
@@ -91,6 +99,15 @@ namespace InformationSystemInfrastructure.Controllers
             if (id != subject.SubjectId)
             {
                 return NotFound();
+            }
+
+            var existingPublication = await _context.Subjects
+                 .Where(u => EF.Functions.Like(u.Name, subject.Name))
+                 .FirstOrDefaultAsync();
+
+            if (existingPublication != null)
+            {
+                ModelState.AddModelError("Name", "Subject with the same name already exists.");
             }
 
             if (ModelState.IsValid)

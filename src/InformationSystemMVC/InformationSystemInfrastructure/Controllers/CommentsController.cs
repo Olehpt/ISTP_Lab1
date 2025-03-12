@@ -97,30 +97,25 @@ namespace InformationSystemInfrastructure.Controllers
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(comment);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CommentExists(comment.ComId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
             ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Name", comment.ArticleId);
             ViewData["AuthorId"] = new SelectList(_context.Users, "UserId", "Email", comment.AuthorId);
-            return View(comment);
+            try
+            {
+                _context.Update(comment);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CommentExists(comment.ComId))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Comments/Delete/5

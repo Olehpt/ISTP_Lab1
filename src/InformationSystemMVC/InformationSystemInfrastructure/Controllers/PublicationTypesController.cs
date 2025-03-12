@@ -56,6 +56,14 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TypeId,Description,Requirements,Name")] PublicationType publicationType)
         {
+            var existingPublication = await _context.PublicationTypes
+                 .Where(u => EF.Functions.Like(u.Name, publicationType.Name))
+                 .FirstOrDefaultAsync();
+
+            if (existingPublication != null)
+            {
+                ModelState.AddModelError("Name", "Type with the same name already exists.");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(publicationType);
@@ -92,7 +100,14 @@ namespace InformationSystemInfrastructure.Controllers
             {
                 return NotFound();
             }
+            var existingPublication = await _context.PublicationTypes
+                 .Where(u => EF.Functions.Like(u.Name, publicationType.Name))
+                 .FirstOrDefaultAsync();
 
+            if (existingPublication != null)
+            {
+                ModelState.AddModelError("Name", "Type with the same name already exists.");
+            }
             if (ModelState.IsValid)
             {
                 try

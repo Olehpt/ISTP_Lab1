@@ -114,6 +114,15 @@ namespace InformationSystemInfrastructure.Controllers
                 return NotFound();
             }
 
+            var existingUser = await _context.Users
+                 .Where(u => EF.Functions.Like(u.Email, user.Email))
+                 .FirstOrDefaultAsync();
+
+            if (existingUser != null)
+            {
+                ModelState.AddModelError("Email", "User with the same email already exists.");
+            }
+
             if (ModelState.IsValid)
             {
                 try
@@ -160,6 +169,16 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            //Cascade test
+            var relatedauthorships = await _context.Users
+                .Include(s => s.AuthorsPerArticles)
+                .FirstOrDefaultAsync(s => s.UserId == id);
+            if (relatedauthorships != null) { _context.Users.RemoveRange(relatedauthorships); }
+            var relatedcoms = await _context.Comments
+                .Where(s => s.AuthorId == id)
+                .ToListAsync();
+            if (relatedauthorships != null) { _context.Comments.RemoveRange(relatedcoms); }
+            //
             var user = await _context.Users.FindAsync(id);
             if (user != null)
             {
