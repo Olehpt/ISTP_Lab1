@@ -139,6 +139,12 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            //Cascade test
+            var relatedarticles = await _context.PublicationTypes
+                .Include(s => s.Articles)
+                .FirstOrDefaultAsync(s => s.TypeId == id);
+            _context.Articles.RemoveRange(relatedarticles.Articles);
+            //
             var publicationType = await _context.PublicationTypes.FindAsync(id);
             if (publicationType != null)
             {

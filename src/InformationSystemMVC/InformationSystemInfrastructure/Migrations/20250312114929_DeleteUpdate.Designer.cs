@@ -4,6 +4,7 @@ using InformationSystemInfrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InformationSystemInfrastructure.Migrations
 {
     [DbContext(typeof(ProjectCsContext))]
-    partial class ProjectCsContextModelSnapshot : ModelSnapshot
+    [Migration("20250312114929_DeleteUpdate")]
+    partial class DeleteUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -247,14 +250,14 @@ namespace InformationSystemInfrastructure.Migrations
                     b.HasOne("InformationSystemDomain.Model.Subject", "Subject")
                         .WithMany("Articles")
                         .HasForeignKey("SubjectId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Articles_Subjects");
 
                     b.HasOne("InformationSystemDomain.Model.PublicationType", "Type")
                         .WithMany("Articles")
                         .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Articles_Types");
 
@@ -268,14 +271,14 @@ namespace InformationSystemInfrastructure.Migrations
                     b.HasOne("InformationSystemDomain.Model.Article", "ArticleNavigation")
                         .WithMany("AuthorsPerArticles")
                         .HasForeignKey("Article")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_AuthorsPerArticle_Article");
 
                     b.HasOne("InformationSystemDomain.Model.User", "AuthorsNavigation")
                         .WithMany("AuthorsPerArticles")
                         .HasForeignKey("Authors")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_AuthorsPerArticle_Authors");
 
@@ -289,14 +292,14 @@ namespace InformationSystemInfrastructure.Migrations
                     b.HasOne("InformationSystemDomain.Model.Article", "Article")
                         .WithMany("Comments")
                         .HasForeignKey("ArticleId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Comments_Articles");
 
                     b.HasOne("InformationSystemDomain.Model.User", "Author")
                         .WithMany("Comments")
                         .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Comments_Authors");
 
@@ -310,7 +313,7 @@ namespace InformationSystemInfrastructure.Migrations
                     b.HasOne("InformationSystemDomain.Model.User", "Members")
                         .WithMany("Organizations")
                         .HasForeignKey("MembersId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Organizations_Members");
 

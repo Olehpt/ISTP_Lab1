@@ -23,10 +23,6 @@ namespace InformationSystemInfrastructure.Controllers
         public async Task<IActionResult> Index()
         {
             var projectCsContext = _context.Articles.Include(a => a.Subject).Include(a => a.Type);
-            foreach(var article in projectCsContext)
-            {
-                Console.WriteLine(article.Name);
-            }
             return View(await projectCsContext.ToListAsync());
         }
 
@@ -65,9 +61,22 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ArticleId,Name,Topic,Content,PublicationDate,Media,SubjectId,TypeId")] Article article)
         {
-            _context.Add(article);
             ViewData["SubjectId"] = new SelectList(_context.Subjects, "SubjectId", "Name", article.SubjectId);
             ViewData["TypeId"] = new SelectList(_context.PublicationTypes, "TypeId", "Name", article.TypeId);
+
+            if (article.PublicationDate > DateOnly.FromDateTime(DateTime.Today))
+            {
+                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                return View(article);
+            }
+            var mindate = new DateOnly(2000, 1, 1);
+            if (article.PublicationDate < mindate)
+            {
+                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                return View(article);
+            }
+
+            _context.Add(article);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -97,34 +106,44 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ArticleId,Name,Topic,Content,PublicationDate,Media,SubjectId,TypeId")] Article article)
         {
+            ViewData["SubjectId"] = new SelectList(_context.Subjects, "SubjectId", "Name", article.SubjectId);
+            ViewData["TypeId"] = new SelectList(_context.PublicationTypes, "TypeId", "Name", article.TypeId);
+
             if (id != article.ArticleId)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (article.PublicationDate > DateOnly.FromDateTime(DateTime.Today))
             {
-                try
-                {
-                    _context.Update(article);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ArticleExists(article.ArticleId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                return View(article);
             }
-            ViewData["SubjectId"] = new SelectList(_context.Subjects, "SubjectId", "Name", article.SubjectId);
-            ViewData["TypeId"] = new SelectList(_context.PublicationTypes, "TypeId", "Name", article.TypeId);
-            return View(article);
+            var mindate = new DateOnly(2000, 1, 1);
+            if (article.PublicationDate < mindate)
+            {
+                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                return View(article);
+            }
+
+            
+            try
+            {
+                _context.Update(article);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ArticleExists(article.ArticleId))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Articles/Delete/5

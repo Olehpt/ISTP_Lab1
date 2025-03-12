@@ -123,7 +123,7 @@ namespace InformationSystemInfrastructure.Controllers
             {
                 return NotFound();
             }
-
+            
             var subject = await _context.Subjects
                 .FirstOrDefaultAsync(m => m.SubjectId == id);
             if (subject == null)
@@ -139,6 +139,12 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            //Cascade test
+            var relatedarticles = await _context.Subjects
+                .Include(s => s.Articles)
+                .FirstOrDefaultAsync(s => s.SubjectId == id);
+            _context.Articles.RemoveRange(relatedarticles.Articles);
+            //
             var subject = await _context.Subjects.FindAsync(id);
             if (subject != null)
             {

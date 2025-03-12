@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace InformationSystemDomain.Model;
 
@@ -11,7 +12,6 @@ public partial class Article
     public string Topic { get; set; } = null!;
 
     public string Content { get; set; } = null!;
-
     public DateOnly PublicationDate { get; set; }
 
     public byte[]? Media { get; set; }
@@ -27,4 +27,5 @@ public partial class Article
     public virtual Subject Subject { get; set; } = null!;
 
     public virtual PublicationType Type { get; set; } = null!;
+
 }

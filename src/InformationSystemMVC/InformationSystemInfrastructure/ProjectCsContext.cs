@@ -48,12 +48,12 @@ public partial class ProjectCsContext : DbContext
 
             entity.HasOne(d => d.Subject).WithMany(p => p.Articles)
                 .HasForeignKey(d => d.SubjectId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_Articles_Subjects");
 
             entity.HasOne(d => d.Type).WithMany(p => p.Articles)
                 .HasForeignKey(d => d.TypeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_Articles_Types");
         });
 
@@ -69,12 +69,12 @@ public partial class ProjectCsContext : DbContext
 
             entity.HasOne(d => d.ArticleNavigation).WithMany(p => p.AuthorsPerArticles)
                 .HasForeignKey(d => d.Article)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_AuthorsPerArticle_Article");
 
             entity.HasOne(d => d.AuthorsNavigation).WithMany(p => p.AuthorsPerArticles)
                 .HasForeignKey(d => d.Authors)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_AuthorsPerArticle_Authors");
         });
 
@@ -89,12 +89,12 @@ public partial class ProjectCsContext : DbContext
 
             entity.HasOne(d => d.Article).WithMany(p => p.Comments)
                 .HasForeignKey(d => d.ArticleId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_Comments_Articles");
 
             entity.HasOne(d => d.Author).WithMany(p => p.Comments)
                 .HasForeignKey(d => d.AuthorId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_Comments_Authors");
         });
 
@@ -111,7 +111,7 @@ public partial class ProjectCsContext : DbContext
 
             entity.HasOne(d => d.Members).WithMany(p => p.Organizations)
                 .HasForeignKey(d => d.MembersId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_Organizations_Members");
         });
 

@@ -10,7 +10,7 @@ public partial class User
     public string Name { get; set; } = null!;
     public string Email { get; set; } = null!;
     [Required]
-    [MinLength(4, ErrorMessage = "Password must be at least 4 characters long")]
+    [MinLength(6, ErrorMessage = "Password must be at least 6 characters long")]
     public string Password { get; set; } = null!;
 
     public string? Info { get; set; }
