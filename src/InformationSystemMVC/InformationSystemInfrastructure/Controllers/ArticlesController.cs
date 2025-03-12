@@ -116,13 +116,13 @@ namespace InformationSystemInfrastructure.Controllers
 
             if (article.PublicationDate > DateOnly.FromDateTime(DateTime.Today))
             {
-                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                ModelState.AddModelError(nameof(article.PublicationDate), "Not actual date");
                 return View(article);
             }
             var mindate = new DateOnly(2000, 1, 1);
             if (article.PublicationDate < mindate)
             {
-                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                ModelState.AddModelError(nameof(article.PublicationDate), "Not actual date");
                 return View(article);
             }
 
@@ -171,6 +171,16 @@ namespace InformationSystemInfrastructure.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            //Cascade test
+            var relatedcoms = await _context.Articles
+                .Include(s => s.Comments)
+                .FirstOrDefaultAsync(s => s.ArticleId == id);
+            _context.Articles.RemoveRange(relatedcoms);
+            var relatedlinks = await _context.Articles
+                .Include(s => s.AuthorsPerArticles)
+                .FirstOrDefaultAsync(s => s.ArticleId == id);
+            _context.Articles.RemoveRange(relatedlinks);
+            //
             var article = await _context.Articles.FindAsync(id);
             if (article != null)
             {

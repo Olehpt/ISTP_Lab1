@@ -64,6 +64,19 @@ namespace InformationSystemInfrastructure.Controllers
             {
                 ModelState.AddModelError("Email", "User with the same email already exists.");
             }
+
+            if (user.SignUpDate > DateOnly.FromDateTime(DateTime.Today))
+            {
+                ModelState.AddModelError(nameof(user.SignUpDate), "Not actual date");
+                return View(user);
+            }
+            var mindate = new DateOnly(2000, 1, 1);
+            if (user.SignUpDate < mindate)
+            {
+                ModelState.AddModelError(nameof(user.SignUpDate), "Not actual date");
+                return View(user);
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(user);
