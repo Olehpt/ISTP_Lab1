@@ -66,6 +66,86 @@
                     <a class="button2" asp-action="Delete" asp-route-id="@item.ArticleId">Delete</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>
+
+<div>
+    <div>
+        <div id="Chart1"></div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <div id="Chart2"></div>
+    </div>
+</div>
+
+@section Scripts
+        {
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawCharts);
+
+        function drawCharts() {
+            fetch('/api/charts/chart1')
+                .then(response => response.json())
+                .then(data => {
+                    const dataTable = new google.visualization.DataTable();
+                    dataTable.addColumn('string', 'Year');
+                    dataTable.addColumn('number', 'Publications');
+
+                    data.forEach(item => {
+                        dataTable.addRow([item.year, item.count]);
+                 });
+
+                    const options = {
+                        title: 'Articles by years:',
+                        width: 600,
+                        height: 400,
+                        legend: { position: 'none' },
+                    };
+
+                    const chart = new google.visualization.ColumnChart(document.getElementById('Chart1'));
+
+                    chart.draw(dataTable, options);
+                });
+        }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawCharts);
+
+        function drawCharts() {
+            fetch('/api/charts/chart2')
+                .then(response => response.json())
+                .then(data => {
+                    const dataTable = new google.visualization.DataTable();
+                    dataTable.addColumn('string', 'Subject');
+                    dataTable.addColumn('number', 'Publications');
+
+                    data.forEach(item => {
+                        dataTable.addRow([item.subject, item.count]);
+                 });
+
+                    const options = {
+                        title: 'Articles by subjects:',
+                        width: 600,
+                        height: 400,
+                        legend: { position: 'none' },
+                    };
+
+                    const chart = new google.visualization.ColumnChart(document.getElementById('Chart2'));
+
+                    chart.draw(dataTable, options);
+                });
+        }
+    </script>
+        }
+
+
+
+

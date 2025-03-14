@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "ContainingType": "InformationSystemInfrastructure.Controllers.ChartsController",
+    "Method": "GetChart1",
+    "RelativePath": "api/Charts/chart1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InformationSystemInfrastructure.Controllers.ChartsController",
+    "Method": "GetChart2",
+    "RelativePath": "api/Charts/chart2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
