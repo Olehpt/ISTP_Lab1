@@ -159,8 +159,19 @@ namespace InformationSystemInfrastructure.Controllers
             //Cascade test
             var relatedarticles = await _context.Subjects
                 .Include(s => s.Articles)
+                    .ThenInclude(a => a.Comments)
+                .Include(s => s.Articles)
+                    .ThenInclude(a => a.AuthorsPerArticles)
                 .FirstOrDefaultAsync(s => s.SubjectId == id);
-            _context.Articles.RemoveRange(relatedarticles.Articles);
+            if (relatedarticles != null)
+            {
+                foreach (var article in relatedarticles.Articles)
+                {
+                    _context.Comments.RemoveRange(article.Comments);
+                    _context.AuthorsPerArticles.RemoveRange(article.AuthorsPerArticles);
+                }
+                _context.Articles.RemoveRange(relatedarticles.Articles);
+            }
             //
             var subject = await _context.Subjects.FindAsync(id);
             if (subject != null)
