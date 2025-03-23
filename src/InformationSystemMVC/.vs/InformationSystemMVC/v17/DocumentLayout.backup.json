@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\views\\articles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\views\\articles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsystemdomain\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C95C87-5470-4D00-984B-A8E3DDE8493B}|InformationSystemDomain\\InformationSystemDomain.csproj|solutionrelative:informationsystemdomain\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|d:\\projects\\istp_lab1\\src\\informationsystemmvc\\informationsysteminfrastructure\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A2C71C7-4050-49E4-9B92-71CEFFD8FD14}|InformationSystemInfrastructure\\InformationSystemInfrastructure.csproj|solutionrelative:informationsysteminfrastructure\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Articles\\Index.cshtml",
-              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Views\\Articles\\Index.cshtml",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Views\\Articles\\Index.cshtml",
-              "RelativeToolTip": "InformationSystemInfrastructure\\Views\\Articles\\Index.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAcwIIAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T08:53:31.583Z",
+              "DocumentIndex": 1,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Comment.cs",
+              "RelativeDocumentMoniker": "InformationSystemDomain\\Model\\Comment.cs",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemDomain\\Model\\Comment.cs",
+              "RelativeToolTip": "InformationSystemDomain\\Model\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T09:09:47.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ValuesController.cs",
-              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Controllers\\ValuesController.cs",
-              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Controllers\\ValuesController.cs",
-              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Controllers\\ValuesController.cs",
-              "RelativeToolTip": "InformationSystemInfrastructure\\Controllers\\ValuesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ArticlesController.cs",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Controllers\\ArticlesController.cs",
+              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Controllers\\ArticlesController.cs",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Controllers\\ArticlesController.cs",
+              "RelativeToolTip": "InformationSystemInfrastructure\\Controllers\\ArticlesController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA5wEIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T16:18:03.275Z",
+              "WhenOpened": "2025-03-23T09:07:58.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "InformationSystemInfrastructure\\Controllers\\CommentsController.cs",
+              "ToolTip": "D:\\Projects\\ISTP_Lab1\\src\\InformationSystemMVC\\InformationSystemInfrastructure\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "InformationSystemInfrastructure\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA5wEsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T09:07:56.667Z",
               "EditorCaption": ""
             }
           ]

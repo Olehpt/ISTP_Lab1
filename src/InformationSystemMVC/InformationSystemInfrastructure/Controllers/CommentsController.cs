@@ -63,6 +63,24 @@ namespace InformationSystemInfrastructure.Controllers
         {
             ViewData["ArticleId"] = new SelectList(_context.Articles, "ArticleId", "Name", comment.ArticleId);
             ViewData["AuthorId"] = new SelectList(_context.Users, "UserId", "Email", comment.AuthorId);
+
+            if (comment.PublicationDate > DateOnly.FromDateTime(DateTime.Today))
+            {
+                ModelState.AddModelError(nameof(comment.PublicationDate), "Not actual date.");
+                return View(comment);
+            }
+            var selectedArticleId = ViewData["ArticleId"] as SelectList;
+            int? articleId = selectedArticleId?.SelectedValue as int?;
+            var currentArticle = _context.Articles.FirstOrDefault(a => a.ArticleId == articleId);
+            if (currentArticle != null)
+            {
+                var mindate = currentArticle.PublicationDate;
+                if (comment.PublicationDate < mindate)
+                {
+                    ModelState.AddModelError(nameof(comment.PublicationDate), "Not actual date.");
+                    return View(comment);
+                }
+            }
             _context.Add(comment);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

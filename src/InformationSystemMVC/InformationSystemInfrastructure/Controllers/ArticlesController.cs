@@ -66,13 +66,13 @@ namespace InformationSystemInfrastructure.Controllers
 
             if (article.PublicationDate > DateOnly.FromDateTime(DateTime.Today))
             {
-                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                ModelState.AddModelError(nameof(article.PublicationDate), "Not actual date.");
                 return View(article);
             }
             var mindate = new DateOnly(2000, 1, 1);
             if (article.PublicationDate < mindate)
             {
-                ModelState.AddModelError(nameof(article.PublicationDate), "Well well well");
+                ModelState.AddModelError(nameof(article.PublicationDate), "Not actual date.");
                 return View(article);
             }
 
