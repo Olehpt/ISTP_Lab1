@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InformationSystemDomain.Model;
 using InformationSystemInfrastructure;
+using InformationSystemInfrastructure.Services;
 
 namespace InformationSystemInfrastructure.Controllers
 {
@@ -187,5 +188,38 @@ namespace InformationSystemInfrastructure.Controllers
         {
             return _context.Subjects.Any(e => e.SubjectId == id);
         }
+        [HttpGet]
+        public IActionResult Import()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Import(IFormFile fileExcel, CancellationToken cancellationToken = default)
+        {
+            var importService = new SubjectDataPortServiceFactory(_context).GetImportService(fileExcel.ContentType);
+            using var stream = fileExcel.OpenReadStream();
+            await importService.ImportFromStreamAsync(stream, cancellationToken);
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpGet]
+        public async Task<IActionResult> Export([FromQuery] string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        CancellationToken cancellationToken = default)
+        {
+            var exportService = new SubjectDataPortServiceFactory(_context).GetExportService(contentType);
+
+            var memoryStream = new MemoryStream();
+
+            await exportService.WriteToAsync(memoryStream, cancellationToken);
+
+            await memoryStream.FlushAsync(cancellationToken);
+            memoryStream.Position = 0;
+
+
+            return new FileStreamResult(memoryStream, contentType)
+            {
+                FileDownloadName = $"categiries_{DateTime.UtcNow.ToShortDateString()}.xlsx"
+            };
+        }
+        }
     }
-}

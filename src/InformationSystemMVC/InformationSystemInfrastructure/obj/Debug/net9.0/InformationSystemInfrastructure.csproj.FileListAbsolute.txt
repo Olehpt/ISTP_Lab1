@@ -331,3 +331,10 @@ D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\o
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\2ao8q185w0-xzw0cte36n.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\d0gqpc262n-jfsiqqwiad.gz
 D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\obj\Debug\net9.0\compressed\h89z0psl5m-o77b2l8lah.gz
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\ClosedXML.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\ExcelNumberFormat.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\Irony.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\SixLabors.Fonts.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\System.IO.Packaging.dll
+D:\Projects\ISTP_Lab1\src\InformationSystemMVC\InformationSystemInfrastructure\bin\Debug\net9.0\XLParser.dll
