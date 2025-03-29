@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;   
 using ClosedXML.Excel;
 using InformationSystemDomain.Model;
+using System;
 namespace InformationSystemInfrastructure.Services
 {
     public class SubjectExportService : ExportService<Subject>
@@ -33,7 +34,7 @@ namespace InformationSystemInfrastructure.Services
             worksheet.Cell(rowIndex, 1).Value = article.Name;
             worksheet.Cell(rowIndex, 2).Value = article.Topic;
             worksheet.Cell(rowIndex, 3).Value = article.Content;
-            worksheet.Cell(rowIndex, 4).Value = article.PublicationDate.ToString();
+            worksheet.Cell(rowIndex, 4).Value = article.PublicationDate.ToDateTime(TimeOnly.MinValue);
             worksheet.Cell(rowIndex, 5).Value = article.TypeId;
             worksheet.Cell(rowIndex, 6).Value = article.SubjectId;
         }

@@ -21,7 +21,7 @@ namespace InformationSystemInfrastructure.Services
                 foreach(IXLWorksheet worksheet in workBook.Worksheets)
                 {
                     var subjectname = worksheet.Name;
-                    var subject = await _context.Subjects.FirstOrDefaultAsync(s => s.Name == subjectname);
+                    var subject = await _context.Subjects.FirstOrDefaultAsync(s => EF.Functions.Like(s.Name, subjectname));
                     if (subject == null)
                     {
                         subject = new Subject();
