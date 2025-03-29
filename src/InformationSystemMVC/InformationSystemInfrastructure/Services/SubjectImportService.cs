@@ -1,4 +1,6 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.InkML;
+using DocumentFormat.OpenXml.Vml.Office;
 using InformationSystemDomain.Model;
 using Microsoft.EntityFrameworkCore;
 namespace InformationSystemInfrastructure.Services
@@ -18,7 +20,12 @@ namespace InformationSystemInfrastructure.Services
             }
            using (XLWorkbook workBook = new XLWorkbook(stream))
             {
-                foreach(IXLWorksheet worksheet in workBook.Worksheets)
+                //
+                await _context.Database.ExecuteSqlRawAsync("DELETE FROM dbo.Articles");
+                //await _context.Database.ExecuteSqlRawAsync("DELETE FROM dbo.Subjects");
+                await _context.SaveChangesAsync();
+                //
+                foreach (IXLWorksheet worksheet in workBook.Worksheets)
                 {
                     var subjectname = worksheet.Name;
                     var subject = await _context.Subjects.FirstOrDefaultAsync(s => EF.Functions.Like(s.Name, subjectname));
@@ -43,7 +50,7 @@ namespace InformationSystemInfrastructure.Services
             a.Content = row.Cell(3).Value.ToString();
             a.PublicationDate = DateOnly.FromDateTime(row.Cell(4).GetValue<DateTime>());
             a.TypeId = row.Cell(5).GetValue<int>();
-            a.SubjectId = row.Cell(6).GetValue<int>();
+            a.SubjectId = subject.SubjectId;
             _context.Articles.Add(a);
             await _context.SaveChangesAsync(cancellationToken);
         }

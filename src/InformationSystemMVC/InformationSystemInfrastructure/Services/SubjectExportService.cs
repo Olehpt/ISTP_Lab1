@@ -14,7 +14,6 @@ namespace InformationSystemInfrastructure.Services
                 "Content",
                 "PublicationDate",
                 "TypeId",
-                "SubjectId",
             };
         private readonly ProjectCsContext _context;
         public SubjectExportService(ProjectCsContext context)
@@ -36,7 +35,6 @@ namespace InformationSystemInfrastructure.Services
             worksheet.Cell(rowIndex, 3).Value = article.Content;
             worksheet.Cell(rowIndex, 4).Value = article.PublicationDate.ToDateTime(TimeOnly.MinValue);
             worksheet.Cell(rowIndex, 5).Value = article.TypeId;
-            worksheet.Cell(rowIndex, 6).Value = article.SubjectId;
         }
         private void WriteSubjects(XLWorkbook workbook, ICollection<Subject> subjects)
         {
