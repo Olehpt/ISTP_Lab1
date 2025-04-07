@@ -31,9 +31,17 @@ namespace InformationSystemInfrastructure.Services
                     var subject = await _context.Subjects.FirstOrDefaultAsync(s => EF.Functions.Like(s.Name, subjectname));
                     if (subject == null)
                     {
+                        int newsubjectid = 1;
+                        var maxId = _context.Subjects.Max(e => (int?)e.SubjectId);
+                        if (maxId.HasValue)
+                        {
+                            newsubjectid = maxId.Value + 1;
+                        }
                         subject = new Subject();
                         subject.Name = subjectname;
+                        //subject.SubjectId = newsubjectid;
                         _context.Subjects.Add(subject);
+                        await _context.SaveChangesAsync(cancellationToken);
                     }
                     foreach(var row in worksheet.RowsUsed().Skip(1))
                     {
@@ -44,12 +52,29 @@ namespace InformationSystemInfrastructure.Services
         }
         private async Task AddArticleAsync(IXLRow row, CancellationToken cancellationToken, Subject subject)
         {
+            //
+            var pubtypesIDs = await _context.PublicationTypes.Select(x => x.TypeId).ToListAsync(cancellationToken);
+            //
             Article a = new Article();
             a.Name = row.Cell(1).Value.ToString();
             a.Topic = row.Cell(2).Value.ToString();
             a.Content = row.Cell(3).Value.ToString();
-            a.PublicationDate = DateOnly.FromDateTime(row.Cell(4).GetValue<DateTime>());
-            a.TypeId = row.Cell(5).GetValue<int>();
+            //
+            try { a.PublicationDate = DateOnly.FromDateTime(row.Cell(4).GetValue<DateTime>()); }
+            catch (Exception Ex){
+                return;
+            }
+            //
+            
+            //
+            try { a.TypeId = row.Cell(5).GetValue<int>(); }
+            catch (Exception Ex) { return;}
+            //
+            if (!pubtypesIDs.Contains(a.TypeId))
+            {
+                return;
+            }
+            //
             a.SubjectId = subject.SubjectId;
             _context.Articles.Add(a);
             await _context.SaveChangesAsync(cancellationToken);
