@@ -65,7 +65,11 @@ namespace InformationSystemInfrastructure.Services
                 return;
             }
             //
-            
+            DateTime minval = new DateTime(2000, 1, 1);
+            if (a.PublicationDate > DateOnly.FromDateTime(DateTime.Now) || a.PublicationDate < DateOnly.FromDateTime(minval))
+            {
+                return;
+            }
             //
             try { a.TypeId = row.Cell(5).GetValue<int>(); }
             catch (Exception Ex) { return;}
