@@ -6,6 +6,7 @@ namespace InformationSystemDomain.Model;
 
 public partial class Comment
 {
+    [Key]
     public int ComId { get; set; }
     [Required]
     [MaxLength(100, ErrorMessage = "Comment must be at most 100 characters long")]

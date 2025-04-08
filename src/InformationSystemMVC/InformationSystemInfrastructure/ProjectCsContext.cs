@@ -22,8 +22,6 @@ public partial class ProjectCsContext : DbContext
 
     public virtual DbSet<Comment> Comments { get; set; }
 
-    public virtual DbSet<Organization> Organizations { get; set; }
-
     public virtual DbSet<PublicationType> PublicationTypes { get; set; }
 
     public virtual DbSet<Subject> Subjects { get; set; }
@@ -96,23 +94,6 @@ public partial class ProjectCsContext : DbContext
                 .HasForeignKey(d => d.AuthorId)
                 .OnDelete(DeleteBehavior.ClientCascade)
                 .HasConstraintName("FK_Comments_Authors");
-        });
-
-        modelBuilder.Entity<Organization>(entity =>
-        {
-            entity.HasKey(e => e.OrgId);
-
-            entity.Property(e => e.OrgId).HasColumnName("OrgID");
-            entity.Property(e => e.Contacts).HasColumnType("text");
-            entity.Property(e => e.Country).HasColumnType("text");
-            entity.Property(e => e.Description).HasColumnType("text");
-            entity.Property(e => e.MembersId).HasColumnName("MembersID");
-            entity.Property(e => e.Name).HasColumnType("text");
-
-            entity.HasOne(d => d.Members).WithMany(p => p.Organizations)
-                .HasForeignKey(d => d.MembersId)
-                .OnDelete(DeleteBehavior.ClientCascade)
-                .HasConstraintName("FK_Organizations_Members");
         });
 
         modelBuilder.Entity<PublicationType>(entity =>
